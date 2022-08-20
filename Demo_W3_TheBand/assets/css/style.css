@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    border: none;
+}
+ul{
+    border: 0;
+}
+.header{
+    position: relative;
+    height: 46px;
+   
+    top: 0;
+}
+.navigation{
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    position: fixed;
+}
+.subnav {
+    display: none;
+    position: relative;
+}
+.navigation .sub:hover .subnav{
+    display: block;
+}
+.navigation .navigation_list > li{
+    cursor: pointer;
+    line-height: 46px;
+    display: inline-block;
+    padding: 0 24px;
+}
+.navigation .navigation_list > li > a{
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+}
+.navigation .navigation_list li:hover{
+    background-color: #ccc;
+    
+}
+.navigation .navigation_list li:hover a{
+    color: black;
+}
+.subnav ul{
+    position: absolute;
+    top: 0;
+    left: -50%;
+    box-shadow: 1px 1px 1px 1px #ccc  ;
+    z-index: 1;
+}
+.subnav ul li{
+    width: 120%;
+    padding: 0 16px;
+    background: white;
+    cursor: pointer;
+    
+    
+}
+.sub{
+    position: relative;
+}
+.subnav ul li >a{
+    color: black;
+    line-height: 16px;
+}
+.nav_arrow_down{
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    top: 33%;
+    right: 7%;
+}
+.sub:hover .nav_arrow_down{
+    color: black;
+}
+.nav_item_search{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.nav_item_search .ti-search{
+    color: white;
+    font-size: inherit;
+    line-height: 46px;
+    padding: 16px 24px;
+    cursor: pointer;
+}
+.nav_item_search .ti-search:hover{
+    background-color: red;
+}
+
+.introduce{
+   position: relative;
+}
+
+.slider_introduce_background{
+    position: relative;
+    height: 738px;  
+    background: url('/Demo_W3_TheBand/assets/img/ny.jpg') no-repeat;
+    background-size: contain;
+}
+
+.slider_introduce_title{
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+.slider_introduce_text{
+    padding: 32px 16px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 39%;
+    color: white;
+}
+.slider_introduce_content{
+    margin: 15px 0;
+}
+
+.content_introduce{
+    background-color: white;
+    position: relative;
+    min-height: 626px;
+}
+
+.content_introduce_mainContent{
+    position: absolute;
+   margin-left: 25%;
+    margin-right: 25%;
+    padding: 64px 16px;
+}
+.content_introduce_mainContent p,
+ .content_tour_title,
+ .content_tour_sologanTour {
+    text-align: center;
+}
+.content_introduce_title ,.content_tour_title
+,.contact_main_introduce_title{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.content_introduce_sologan,.content_tour_sologanTour,.contact_main_introduce_sologan {
+    margin: 15px 0;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+.content_introduce_textIntroduce >p{
+    margin: 15px 0;
+    text-align: justify;
+    box-sizing: inherit;
+}
+
+.content_introduce_member{
+    padding: 32px 0;
+    height: auto;
+}
+.content_introduce_member li{
+    width: 33.33333%;
+    float: left;
+    
+}
+.content_introduce_member li p{
+    margin: 15px 0;
+    text-align: center;
+    
+}
+.content_introduce_member li img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    margin-bottom: 16px;
+}
+
+.content_tour{
+  display: block;
+  background-color: black;
+  color: white;
+} 
+
+.content_tour_main{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 64px 16px;
+}
+.content_tour_main_book_clendar{
+    background-color: white;
+}
+.content_tour_main_book_clendar li{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 16px;
+
+}
+.content_tour_main_book_clendar li p{
+    display: inline-block;
+}
+.tour_book_clendar_name{
+    color: #757575;
+}
+
+.tour_book_clendar_status{
+    margin-left: 16px;
+    padding: 0 8px;
+    color: white;
+    background-color: #f44336;
+    text-align: center;
+    
+}
+
+.tour_book_clendar_status_number{
+    color: white;
+    float: right;
+    margin-right:16px ;
+    padding: 2px 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+.content_tour_main_touringPlace{
+    padding: 32px 0;
+}
+
+.tour_main_touringPlace_address{
+    width: 32.9%;
+    display: inline-block;
+    background-color: white;
+    color: #000;
+}
+
+.tour_main_touringPlace_imgAddress{
+    width: 100%;
+}
+
+.tour_main_touringPlace_Infaddress{
+    padding: 0 8px;
+}
+
+.touringPlace_Infaddress_title,
+ .touringPlace_Infaddress_date,
+  .touringPlace_Infaddress_content{
+    margin: 15px 0;
+    color: #000;
+
+}
+
+.touringPlace_Infaddress_buy{
+    margin-bottom: 15px ;
+    padding: 8px 16px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    border: none;
+}
+.touringPlace_Infaddress_buy:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.content_contact_main{
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 64px 16px;
+}
+
+.content_contact_main_introduce p{
+    text-align: center;
+}
+
+.content_contact_main_Info{
+    padding: 32px 0;
+}
+
+.contact_main_Info_address{
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 49.4%;
+}
+
+.contact_main_Info_address_country{
+    display: inline-block;
+}
+
+.contact_main_Info_address_country p,
+.contact_main_Info_address_phone p,
+.contact_main_Info_address_mail p{
+    cursor: auto;
+   margin: 0 30px;
+}
+.contact_main_Info_address_country ,
+.contact_main_Info_address_phone ,
+.contact_main_Info_address_mail {
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+}
+
+.Info_address_country_icon{
+    float: left;
+}
+
+.contact_main_Info_subAddress{
+    display: inline-block;
+    width: 50%;
+}
+.contact_main_Info_subAddress_name,
+.contact_main_Info_subAddress_mail{
+    width: 49.4%;
+    margin-bottom: 8px;
+}
+.contact_main_Info_subAddress_name,
+.contact_main_Info_subAddress_mail,
+.contact_main_Info_subAddress_message{
+    padding: 8px ;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.contact_main_Info_subAddress_message{
+    width: 100%;
+}
+.contact_main_Info_subAddress_send{
+    float: right;
+    margin: 16px 0;
+    padding: 8px 12px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    border: none;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.contact_main_Info_subAddress_send:hover{
+    background-color: #ccc;
+    color: black;
+  
+
+}
+.content_map{
+    max-width: 100%;
+    height: 830px;
+    background-image: url('/Demo_W3_TheBand/assets/img/girl.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.footer_icon i{
+   font-size: 20px;
+}
+
+.footer_Power{
+    margin: 15px 0;
+}
